@@ -1,0 +1,23 @@
+{
+  "name": "steal-the-deal",
+  "private": true,
+  "scripts": {
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "lint": "turbo lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "ui:add": "pnpm --filter @steal-the-deal/ui ui:add",
+    "dev:web": "turbo run dev --filter=./apps/web",
+    "dev:admin": "turbo run dev --filter=./apps/admin"
+  },
+  "devDependencies": {
+    "@steal-the-deal/eslint-config": "workspace:*",
+    "@steal-the-deal/typescript-config": "workspace:*",
+    "prettier": "^3.3.2",
+    "turbo": "latest"
+  },
+  "packageManager": "pnpm@8.9.0",
+  "engines": {
+    "node": ">=18"
+  }
+}
