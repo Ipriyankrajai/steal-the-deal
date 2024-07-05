@@ -1,6 +1,10 @@
-import { drizzle } from "drizzle-orm/neon-http";
-import { neon } from "@neondatabase/serverless";
-import { DATABASE_URL } from "./env.constant";
+import { drizzle } from "drizzle-orm/libsql";
+import { createClient } from "@libsql/client";
+import { TURSO_AUTH_TOKEN, TURSO_CONNECTION_URL } from "../env.constant";
 
-const sql = neon(DATABASE_URL);
-export const db = drizzle(sql);
+export const turso = createClient({
+  url: TURSO_CONNECTION_URL!,
+  authToken: TURSO_AUTH_TOKEN!,
+});
+
+export const db = drizzle(turso);
