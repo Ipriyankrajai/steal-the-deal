@@ -2,7 +2,8 @@
   "name": "@steal-the-deal/db",
   "scripts": {
     "db:generate": "drizzle-kit generate",
-    "db:migrate": "tsx src/migrate.ts"
+    "db:migrate": "tsx src/migrate.ts",
+    "db:studio": "drizzle-kit studio"
   },
   "devDependencies": {
     "@steal-the-deal/typescript-config": "workspace:*",
