@@ -1,13 +1,13 @@
 import { defineConfig } from "drizzle-kit";
-import { DATABASE_URL } from "./src/env.constant";
+import { TURSO_AUTH_TOKEN, TURSO_CONNECTION_URL } from "./env.constant";
 
 export default defineConfig({
   schema: "./src/schema/index.ts",
   out: "./drizzle",
-  dialect: "postgresql",
+  dialect: "sqlite",
+  driver: "turso",
   dbCredentials: {
-    url: DATABASE_URL,
+    url: TURSO_CONNECTION_URL!,
+    authToken: TURSO_AUTH_TOKEN!,
   },
-  verbose: true,
-  strict: true,
 });
