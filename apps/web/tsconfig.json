@@ -1,7 +1,7 @@
 {
   "extends": "@steal-the-deal/typescript-config/nextjs.json",
   "compilerOptions": {
-    "paths": {"@/*": ["./*"]},
+    "paths": {"@/*": ["./src/*"]},
     "plugins": [
       {
         "name": "next",
