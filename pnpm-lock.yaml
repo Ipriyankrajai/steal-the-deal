@@ -26,6 +26,12 @@ importers:
       '@auth/core':
         specifier: ^0.34.1
         version: 0.34.1
+      '@auth/drizzle-adapter':
+        specifier: ^1.4.1
+        version: 1.4.1
+      '@steal-the-deal/db':
+        specifier: workspace:*
+        version: link:../../packages/db
       '@steal-the-deal/ui':
         specifier: workspace:*
         version: link:../../packages/ui

@@ -1,5 +1,6 @@
 {
   "name": "@steal-the-deal/db",
+  "main": "src/index.ts",
   "scripts": {
     "db:generate": "drizzle-kit generate",
     "db:migrate": "tsx src/migrate.ts",

@@ -21,5 +21,6 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
+  "include": ["src", "*.ts", "env.mjs", "**/*.ts", "../utils/try.ts"],
   "exclude": ["node_modules", "dist"]
 }
