@@ -1,19 +1,26 @@
 {
   "extends": "@steal-the-deal/typescript-config/nextjs.json",
   "compilerOptions": {
-    "paths": {"@/*": ["./src/*"]},
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ]
+    },
     "plugins": [
       {
-        "name": "next",
-      },
+        "name": "next"
+      }
     ],
+    "isolatedModules": true
   },
   "include": [
     "next-env.d.ts",
     "**/*.js",
     "**/*.ts",
     "**/*.tsx",
-    ".next/types/**/*.ts",
+    ".next/types/**/*.ts"
   ],
-  "exclude": ["node_modules"],
+  "exclude": [
+    "node_modules"
+  ]
 }
